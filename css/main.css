@@ -169,6 +169,8 @@ input[type=submit]:hover {
     margin: 20px;
     padding: 20px;
 }
-.iframe {
-    
+
+.mapSearchBar {
+	width: 180px;
+	background: rgba(50,50,50,.1);
 }
