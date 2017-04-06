@@ -111,6 +111,7 @@ hr {
     display: none;
     margin: 20px;
 }
+
 .submit {
     display: none;
 } 
@@ -135,6 +136,7 @@ textarea:focus, input:focus{
 .queue {
     font-size: 25px;
     margin-bottom: 30px;
+    cursor: default;
 }
 .label {
     text-align: left;
@@ -142,4 +144,28 @@ textarea:focus, input:focus{
     margin-left:60px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+input[type=submit] {
+    text-align: center;
+    background-color: #D80027;
+    color: white;
+    padding: 15px;
+    margin: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    width: auto;
+    display: none;
+}
+input[type=submit]:hover {
+    background-color: white;
+    color: #D80027;
+}
+.mapActions {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #f2f2f2;
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    padding: 20px;
 }
