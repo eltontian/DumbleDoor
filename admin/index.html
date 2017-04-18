@@ -165,6 +165,16 @@
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
+            
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Available</h2>
+                    <p>You are currently available for students to visit.</p>
+                    <a id="availability" class="btn btn-danger btn-block">Change Status to Busy</a>
+                    <p></p>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
 
             <!-- /.row -->
             <div class="row">
@@ -262,7 +272,6 @@
                     <!-- /.panel -->
 
                         <!-- /.panel-footer -->
-                    </div>
                     <!-- /.panel .chat-panel -->
                 </div>
                 <!-- /.col-lg-4 -->
@@ -290,6 +299,31 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="../dist/js/sb-admin-2.js"></script>
+    
+    <script>
+        $("#availability").click(function () {
+
+            $button = $(this);
+            //getting the next element
+            $description = $button.prev();
+            $title = $description.prev();
+            if ($button.hasClass("btn-danger")) {
+                $button.text("Change to Available");
+                $button.addClass("btn-success");
+                $button.removeClass("btn-danger");
+                $description.text("You are currently unavailable for students to visit.");
+                $title.text("Busy");
+            } else {
+                $button.text("Change to Busy");
+                $button.addClass("btn-danger");
+                $button.removeClass("btn-success");
+                $description.text("You are currently available for students to visit.");
+                $title.text("Available");
+            }
+            
+        
+        });
+    </script> 
 
 </body>
 
