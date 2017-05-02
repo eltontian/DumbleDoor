@@ -4,6 +4,7 @@ body {
     font-family: "Source Sans Pro", Helvetica, sans-serif;
     font-weight: thin;
     color: #D80027;
+    margin: 0px;
 }
 .screen {
     margin-top: 0px
@@ -13,6 +14,7 @@ body {
     margin-right: 0px;
     margin-bottom: 0px;
     background-color: white;
+    padding: 0px;
     float: left;
 }
 .navbar {
